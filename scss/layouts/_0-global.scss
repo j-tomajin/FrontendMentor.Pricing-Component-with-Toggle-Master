@@ -29,16 +29,34 @@ body {
     letter-spacing: 1px;
     padding: f.rem(18);
     border-radius: f.rem(7);
+    transition: .5s ease;
 }
 
 .link-clr-light {
     color: var(--clr-neutral-100);
     background-image: var(--linear-gradient);
+    border: 1px solid var(--clr-neutral-100);
+
+    @include bp.breakpointMin(medium-screen) {
+        &:hover {
+            background-image: none;
+            border: 1px solid var(--clr-primary);
+            color: var(--clr-primary)
+        }
+    }
 }
 
 .link-clr-dark {
     color: var(--clr-primary);
     background-color: var(--clr-neutral-100);
+    border: 1px solid var(--clr-neutral-100);
+
+    @include bp.breakpointMin(medium-screen) {
+        &:hover {
+            background-color: transparent;
+            color: var(--clr-neutral-100);
+        }
+    }
 }
 
 .border {
