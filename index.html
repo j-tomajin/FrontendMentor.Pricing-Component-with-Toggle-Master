@@ -8,45 +8,112 @@
   
   <title>Frontend Mentor | [Challenge Name Here]</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <!-- CSS -->
+  <link rel="stylesheet" href="./dist/style.css">
+  
+  <!-- GOOGLE FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+
+  <!-- JavaScript -->
+  <script src="./js/app.js" defer></script>
 </head>
 <body>
+  <!-- MAIN -->
+  <main class="main">
+    <article class="main__container">
+      <!-- CATEGORY -->
+      <div class="main__head">
+        <p class="category">Our Pricing</p>
+        <div class="payment">
+          <p>Annually</p>
+          <label for="checkbox">
+            <input type="checkbox" id="checkbox" checked>
+            <span class="check"></span>
+          </label>
+          <p>Monthly</p>
+        </div>
+      </div>
 
-  Our Pricing
-  Annually
-  Monthly
+      <!-- CARDS -->
+      <article>
+        <!-- BASIC PLAN -->
+        <div class="main__plan-card">
+          <p>Basic</p>
+          <!-- BASIC PLAN PRICE -->
+          <div class="price">
+            <div class="price-box">
+              <span>&dollar;19.99</span>
+              <span>&dollar;199.99</span>
+            </div>
+          </div>
+          <!-- BENEFITS -->
+          <div class="benefit head-text">
+            <ul class="border-dark">
+              <li class="border-bottom">500 GB Storage</li>
+              <li class="border-bottom">2 Users Allowed</li>
+              <li class="border-bottom">Send up to 3 GB</li>
+            </ul>
+          </div>
 
-  Basic
-  &dollar;19.99
-  &dollar;199.99
-  500 GB Storage
-  2 Users Allowed
-  Send up to 3 GB
-  Learn More
+          <!-- LINK -->
+          <a href="#" class="link link-clr-light link-display">Learn More</a>
+        </div>
 
-  Professional
-  &dollar;24.99
-  &dollar;249.99
-  1 TB Storage
-  5 Users Allowed
-  Send up to 10 GB
-  Learn More
+        <!-- PROFESSIONAL PLAN -->
+        <div class="main__plan-card main-card-clr">
+          <p>Professional</p>
+          <!-- PROFESSIONAL PLAN PRICE -->
+          <div class="price">
+            <div class="price-box">
+              <span>&dollar;24.99</span>
+              <span>&dollar;249.99</span>
+            </div>
+          </div>
+          <!-- BENEFITS -->
+          <div class="benefit">
+            <ul class="border">
+              <li>1 TB Storage</li>
+              <li>5 Users Allowed</li>
+              <li>Send up to 10 GB</li>
+            </ul>
+          </div>
 
-  Master
-  &dollar;39.99
-  &dollar;399.99
-  2 TB Storage
-  10 Users Allowed
-  Send up to 20 GB
-  Learn More
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+          <!-- LINK -->
+          <a href="#" class="link link-clr-dark link-display">Learn More</a>
+        </div>
+
+        <!-- MASTER PLAN -->
+        <div class="main__plan-card">
+          <p>Master</p>
+          <!-- MASTER PLAN PRICE -->
+          <div class="price">
+            <div class="price-box">
+              <span>&dollar;39.99</span>
+              <span>&dollar;399.99</span>
+            </div>
+          </div>
+          <!-- BENEFITS -->
+          <div class="benefit head-text">
+            <ul class="border-dark">
+              <li class="border-bottom">2 TB Storage</li>
+              <li class="border-bottom">10 Users Allowed</li>
+              <li class="border-bottom">Send up to 20 GB</li>
+            </ul>
+          </div>
+
+          <!-- LINK -->
+          <a href="#" class="link link-clr-light link-display">Learn More</a>
+        </div>
+      </article>
+    </article>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </footer>
 </body>
 </html>
