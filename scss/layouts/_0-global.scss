@@ -1,3 +1,58 @@
 @use '../utils/breakpoints' as bp;
 @use '../utils/functions' as f;
 @use '../utils/fonts' as font;
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: f.rem(15);
+    background-color: var(--clr-neutral-100);
+}
+
+.head-text {
+    color: var(--clr-neutral-500);
+}
+
+.main-card-clr {
+    color: var(--clr-neutral-100);
+}
+
+.heading-light {
+    color: var(--clr-neutral-100);
+}
+
+.heading-dark {
+    color: var(--clr-neutral-900);
+}
+
+.link {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: f.rem(18);
+    border-radius: f.rem(7);
+}
+
+.link-clr-light {
+    color: var(--clr-neutral-100);
+    background-image: var(--linear-gradient);
+}
+
+.link-clr-dark {
+    color: var(--clr-primary);
+    background-color: var(--clr-neutral-100);
+}
+
+.border {
+    border-top: 1px solid var(--clr-neutral-100);
+
+    li {
+        border-bottom: 1px solid var(--clr-neutral-100);
+    }
+}
+
+.border-dark {
+    border-top: 1px solid var(--clr-neutral-200);
+
+    li {
+        border-bottom: 1px solid var(--clr-neutral-200);
+    }
+}
